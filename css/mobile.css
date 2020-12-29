@@ -1,0 +1,16 @@
+@media screen and (max-width:900px){
+
+    header{
+        display: none;
+    }
+    
+    .header-open{
+        width: 100%;
+        position: absolute;
+    }
+
+    #close{
+        display: initial;
+        cursor: pointer;
+    }
+}
