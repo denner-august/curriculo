@@ -1,16 +1,45 @@
 @media screen and (max-width:900px){
 
-    header{
+    nav{
+        justify-content: flex-start;
+        background-color: #ff7c00;
+    }
+
+    main{
+        margin-left: 0;
+    }
+
+    nav ul{
         display: none;
     }
-    
+
+    header{
+        transform: translateX(-1000%);
+        transition: 1s;
+    }
+
     .header-open{
+        transition: 0.5s;
+        height: 100vh;
         width: 100%;
         position: absolute;
+        position: fixed;
+        transform: translateX(0);
+    }
+
+    #button-open{
+        justify-content: flex-start;
+        display: initial;
+        height: 10vh;
+        cursor: pointer;
+        margin-left: 10%;
     }
 
     #close{
         display: initial;
         cursor: pointer;
     }
+    
+
+
 }
