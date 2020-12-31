@@ -15,6 +15,14 @@
 #button-open{
     display: none;
 }
+
+#button-open-nav{
+    display: none;
+}
+
+#close-mobile{
+    display: none;
+}
 header{
     position: fixed;
     flex-direction: column;
@@ -79,17 +87,20 @@ nav ul{
     flex-direction: row;
 }
 
+nav li{
+    padding: 20px;
+}
+
 a{
     text-transform: capitalize;
     color: white;
     transition: 1;
-
 }
 
 a:hover{
     transition: 0.3s;
-
     font-size: 3vh;
+   
 }
 
 aside{
