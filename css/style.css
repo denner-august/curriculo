@@ -23,6 +23,20 @@
 #close-mobile{
     display: none;
 }
+
+#button-open-certificado{
+    display: none;
+}
+
+#cursos{
+    display: none;
+}
+
+.cursos-open{
+    display: none;
+}
+
+
 header{
     position: fixed;
     flex-direction: column;
@@ -41,13 +55,13 @@ header  {
 }
 
 #denner{
-    height: 25vh;
+    height: 20vh;
     border-radius: 20%;
 }
 
 #denner:hover{
     transition: 0.5s;
-    height: 40vh;
+    height: 25vh;
 }
 
 #linkedin, #whatsapp, #github, #close{
@@ -59,7 +73,7 @@ header  {
     display: none;
 }
 #linkedin:hover, #whatsapp:hover, #github:hover{
-    height: 15vh;
+    height: 13vh;
 }
 
 main{
@@ -105,6 +119,7 @@ a:hover{
 
 aside{
     height: 90%;
+    margin-bottom: 50px;
     
 }
 
