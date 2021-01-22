@@ -1,5 +1,9 @@
 @media screen and (max-width:735px){
 
+    #cursor_pc{
+        display: none;
+    }
+
     #close-mobile{
         display: initial;
         height: 10vh;
@@ -7,20 +11,21 @@
     }
 
     nav{
-        transform: translateX(-10000%);
-        transition: 1s;
+        transform: translateY(-100vw);
+        transition: 0.5s;
     }
 
     .nav-open{
         transform: translateY(0);
         position: absolute;
-        position: fixed;
         background-color: #000000fa;
         height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         z-index: 2;
+        
+        
     }
 
     nav ul{
@@ -32,12 +37,16 @@
         height: 15vh;
     }
 
+    a{
+        color: white;
+    }
+
     main{
         margin-left: 0;
     }
 
    #buttons{
-       background-color: #9afdf894;
+       background-color:  #2D88FF;
         display: flex;
         justify-content: space-around;
         z-index: 1;
@@ -81,35 +90,41 @@
     }
 
     .cursos-open{
+        
         display: initial;
-        height: 100vh;
         width: 100%;
         position: absolute;
         background-color: #2c234c;
         z-index: 1;
         color: white;
         position: absolute;
-        transform: translateY(-100%);
+        transform: translateY(-200%);
         transition: 0.5s;
+        padding-bottom: 20px;
 }
 
     .cursos{
         transform: translateX(0);
     }
 
-   
+   container{
+       padding: 0px 15px;
+       height: 100vh;
+      
+   }
 
+   container h1{
+       text-align: center;
+       font-size: 25px;
+   }
     container img{
         display: flex;
-        justify-content: center;
         cursor: pointer;
         height: 10vh;
         margin: auto;
-        margin-top: 1%;
-        margin-bottom: 4%;
+        padding-top: 10px;
+        
     }
-
-    
 
     #close{
         display: initial;
