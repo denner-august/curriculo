@@ -1,4 +1,4 @@
-@media screen and (max-width:735px){
+@media screen and (max-width:845px){
 
     #cursor_pc{
         display: none;
@@ -109,7 +109,7 @@
 
    container{
        padding: 0px 15px;
-       height: 100vh;
+       height: auto;
       
    }
 
