@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #202020;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header nav   " "header main " "aside aside ";
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  height: 100vh;
+}
+
+body #close {
+  display: none;
+}
+
+body #close-mobile {
+  display: none;
+}
+
+body #menu-mobile {
+  display: none;
+}
+
+body #projetos {
+  display: none;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: #121214;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.header #denner {
+  border-radius: 100%;
+  width: 30vh;
+  height: 30vh;
+}
+
+.header img {
+  width: auto;
+  height: 10vh;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header img:hover {
+  height: 13vh;
+}
+
+.nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: nav;
+  background-color: #202024;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: capitalize;
+}
+
+.nav section p {
+  margin: 5px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  border-bottom: 1px solid #40407a;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav ul li {
+  padding: 1vw;
+  list-style: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav ul li:hover {
+  font-size: 17px;
+}
+
+.nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
+  background-color: #40407a;
+  color: white;
+  padding: 15px;
+}
+
+main h1, main h2, main h3 {
+  text-align: center;
+}
+
+aside {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: aside;
+  background-color: #f1f1f1;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "contabilidade contabilidade" "informatica informatica" "corretora corretora" "room room" "depoimentos depoimentos" "bootcamp bootcamp";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+aside .informatica {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: informatica;
+  width: auto;
+  height: 80vh;
+  background-image: url(../images/imagesprojeto/informatica.png);
+  background-size: contain;
+}
+
+aside .corretora {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: corretora;
+  background-image: url(../images/imagesprojeto/corretora.png);
+}
+
+aside .room {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: room;
+  background-image: url(../images/imagesprojeto/roomPage.png);
+}
+
+aside .depoimentos {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: depoimentos;
+  background-image: url(../images/imagesprojeto/depoimentos.png);
+}
+
+aside .bootcamp {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: bootcamp;
+  width: auto;
+  background-size: contain;
+  background-image: url(../images/imagesprojeto/bootcamp.png);
+  background-repeat: no-repeat;
+}
+
+aside .contabilidade {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: contabilidade;
+  width: auto;
+  background-size: contain;
+  background-image: url(../images/imagesprojeto/contabilidade.png);
+}
+
+aside .informatica, aside .corretora, aside .room, aside .depoimentos, aside .contabilidade, aside .bootcamp {
+  width: auto;
+  height: 80vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*# sourceMappingURL=estilo.css.map */

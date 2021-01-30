@@ -1,0 +1,126 @@
+@media screen and (max-width: 900px) {
+  .informatica, .corretora, .room, .depoimentos, .contabilidade, .bootcamp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-x: hidden;
+  }
+  body .header {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    position: fixed;
+  }
+  body .header #close {
+    display: initial;
+    cursor: pointer;
+  }
+  body .open {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  body .main {
+    width: 100%;
+  }
+  body section p {
+    display: none;
+  }
+  body .nav {
+    height: 20vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .nav ul {
+    display: none;
+  }
+  body #menu-mobile {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body #menu-mobile img {
+    background-size: contain;
+    height: 20vh;
+    width: 100%;
+    cursor: pointer;
+  }
+  body #projetos {
+    background-color: #181818;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body #projetos ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    list-style: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body #projetos ul a {
+    color: white;
+    text-decoration: none;
+  }
+  body #projetos ul a:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+  body #projetos img {
+    cursor: pointer;
+    height: 10vh;
+  }
+  body #projetos img:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 15vh;
+  }
+  body .projetos-open {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

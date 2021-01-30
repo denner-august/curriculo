@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$background: contain;
+$width:auto;
+$height:80vh;
+$repete: no-repeat;
+
+
+
+body{
+    #close{
+       display: none;
+    }
+
+    #close-mobile{
+        display: none;
+    }
+
+    #menu-mobile{
+        display: none;
+    }
+
+    #projetos{
+        display: none;
+    }
+
+   
+
+    background-color: #202020;
+    display: grid;
+    grid-template-areas: 
+    "header nav   "
+    "header main "
+    "aside aside "
+    ;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr auto;
+    height: 100vh;
+}
+
+
+.header{
+    grid-area: header;
+    background-color:#121214;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    #denner{
+        border-radius: 100%;
+        width: 30vh;
+        height: 30vh;
+    }
+
+    img{
+        width: auto;
+        height: 10vh;
+        transition: 0.2s;
+    }
+    
+    img:hover{
+        height: 13vh;
+    }
+}
+
+.nav{
+    grid-area: nav;
+    background-color: #202024;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-transform: capitalize;
+    
+    section{
+        
+        p{
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            border-bottom: 1px solid #40407a;
+        }
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        li{
+            padding: 1vw;
+            list-style: none;
+            transition: 0.2s;
+        }
+            
+        li:hover{
+           font-size: 17px;
+        }
+    }
+
+   a{
+       display: flex;
+        justify-content: space-around;
+       color: rgb(245, 245, 245);
+       text-decoration: none;
+   }
+        
+}
+
+main{
+    grid-area: main;
+    background-color: #40407a;
+    color: white;
+    padding: 15px;
+    h1, h2,h3{text-align: center;}
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(241, 241, 241);
+    display: grid;
+    grid-template-areas:
+    "contabilidade contabilidade"
+    "informatica informatica"
+    "corretora corretora"
+    "room room"
+    "depoimentos depoimentos"
+    "bootcamp bootcamp"
+    
+    ;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+   
+    .informatica{
+        grid-area: informatica;
+        width: $width;
+        height: $height;
+        background-image: url(../images/imagesprojeto/informatica.png);
+        background-size: $background;
+        
+        
+    }
+
+    .corretora{
+        grid-area: corretora;
+        background-image: url(../images/imagesprojeto/corretora.png);
+       
+    }
+
+    .room{
+        grid-area: room;
+        background-image: url(../images/imagesprojeto/roomPage.png);
+
+    }
+
+    .depoimentos{
+        grid-area: depoimentos;
+        background-image: url(../images/imagesprojeto/depoimentos.png);
+    }
+
+    .bootcamp{
+        grid-area: bootcamp;
+        width: $width;
+        background-size: $background;
+        background-image: url(../images/imagesprojeto/bootcamp.png);
+        background-repeat: $repete;
+    }
+
+    .contabilidade{
+        grid-area: contabilidade;
+        width: $width;
+        background-size: $background;
+        background-image: url(../images/imagesprojeto/contabilidade.png);
+        
+        
+    }
+
+    .informatica, .corretora, .room, .depoimentos,.contabilidade,.bootcamp{
+        width: $width;
+        height: $height;
+        background-size: $background;
+        background-repeat: $repete;
+        background-position: center;
+        
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
