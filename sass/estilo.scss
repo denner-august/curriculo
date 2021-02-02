@@ -101,8 +101,8 @@ body{
             transition: 0.2s;
         }
             
-        li:hover{
-           font-size: 17px;
+        a:hover{
+          color: yellow;
         }
     }
 
@@ -120,7 +120,7 @@ main{
     background-color: #40407a;
     color: white;
     padding: 15px;
-    h1, h2,h3{text-align: center;}
+    h1, h2,h3,h4{text-align: center;}
 }
 
 aside{

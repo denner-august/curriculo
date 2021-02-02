@@ -117,8 +117,8 @@ body #projetos {
   transition: 0.2s;
 }
 
-.nav ul li:hover {
-  font-size: 17px;
+.nav ul a:hover {
+  color: yellow;
 }
 
 .nav a {
@@ -140,7 +140,7 @@ main {
   padding: 15px;
 }
 
-main h1, main h2, main h3 {
+main h1, main h2, main h3, main h4 {
   text-align: center;
 }
 

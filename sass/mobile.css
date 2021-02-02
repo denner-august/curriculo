@@ -97,6 +97,7 @@
     list-style: none;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-bottom: 20px;
   }
   body #projetos ul a {
     color: white;
