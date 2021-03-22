@@ -15,6 +15,7 @@ body {
   -ms-grid-columns: 1fr auto;
       grid-template-columns: 1fr auto;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 body #close {
@@ -38,7 +39,7 @@ body #projetos {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: header;
-  background-color: #121214;
+  background-color: #070708;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +119,7 @@ body #projetos {
 }
 
 .nav ul a:hover {
-  color: yellow;
+  color: #fbff00;
 }
 
 .nav a {
@@ -135,7 +136,7 @@ main {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: main;
-  background-color: #40407a;
+  background-color: #3b5998;
   color: white;
   padding: 15px;
 }
@@ -149,7 +150,7 @@ aside {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: aside;
-  background-color: #f1f1f1;
+  background-color: #95B8D1;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "contabilidade contabilidade" "informatica informatica" "corretora corretora" "room room" "depoimentos depoimentos" "bootcamp bootcamp" "cep_agora cep_agora" "url url" "hotel hotel";

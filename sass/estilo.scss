@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 $background: contain;
@@ -40,12 +41,13 @@ body{
     grid-template-rows: 1fr ;
     grid-template-columns: 1fr auto;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 .header{
     grid-area: header;
-    background-color:#121214;
+    background-color:#070708;
     display: flex;
     flex-direction: column;
     color: white;
@@ -102,7 +104,7 @@ body{
         }
             
         a:hover{
-          color: yellow;
+          color: rgb(251, 255, 0);
         }
     }
 
@@ -117,7 +119,7 @@ body{
 
 main{
     grid-area: main;
-    background-color: #40407a;
+    background-color: #3b5998;
     color: white;
     padding: 15px;
     h1, h2,h3,h4{text-align: center;}
@@ -125,7 +127,7 @@ main{
 
 aside{
     grid-area: aside;
-    background-color: rgb(241, 241, 241);
+    background-color: #95B8D1;
     display: grid;
     grid-template-areas:
     "contabilidade contabilidade"
