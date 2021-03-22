@@ -134,6 +134,9 @@ aside{
     "room room"
     "depoimentos depoimentos"
     "bootcamp bootcamp"
+    "cep_agora cep_agora"
+    "url url"
+    "hotel hotel"
     
     ;
 
@@ -181,11 +184,30 @@ aside{
         width: $width;
         background-size: $background;
         background-image: url(../images/imagesprojeto/contabilidade.png);
-        
-        
     }
 
-    .informatica, .corretora, .room, .depoimentos,.contabilidade,.bootcamp{
+    .cep_agora{
+        grid-area: cep_agora;
+        width: $width;
+        background-size: $background;
+        background-image: url(../images/imagesprojeto/cepagora.png);
+    }
+    
+    .url{
+        grid-area: url;
+        width: $width;
+        background-size: $background;
+        background-image: url(../images/imagesprojeto/url-shorting.png);
+    }
+
+    .hotel{
+        grid-area: hotel;
+        width: $width;
+        background-size: $background;
+        background-image: url(../images/imagesprojeto/hotel.png)
+    }
+
+    .informatica, .corretora, .room, .depoimentos,.contabilidade,.bootcamp,.cep_agora,.url,.hotel{
         width: $width;
         height: $height;
         background-size: $background;

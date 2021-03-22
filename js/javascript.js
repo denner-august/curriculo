@@ -1,3 +1,4 @@
+
 document.getElementById('mobile-open').onclick = ()=>{
     document.getElementById('menu-header').classList.remove('open')
 }
@@ -14,3 +15,4 @@ document.getElementById('projetos-close').onclick = ()=>{
    document.getElementById("projetos").classList.add('projetos-open')
 }
   
+

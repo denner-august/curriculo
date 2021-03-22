@@ -152,7 +152,7 @@ aside {
   background-color: #f1f1f1;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "contabilidade contabilidade" "informatica informatica" "corretora corretora" "room room" "depoimentos depoimentos" "bootcamp bootcamp";
+      grid-template-areas: "contabilidade contabilidade" "informatica informatica" "corretora corretora" "room room" "depoimentos depoimentos" "bootcamp bootcamp" "cep_agora cep_agora" "url url" "hotel hotel";
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
@@ -215,7 +215,37 @@ aside .contabilidade {
   background-image: url(../images/imagesprojeto/contabilidade.png);
 }
 
-aside .informatica, aside .corretora, aside .room, aside .depoimentos, aside .contabilidade, aside .bootcamp {
+aside .cep_agora {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: cep_agora;
+  width: auto;
+  background-size: contain;
+  background-image: url(../images/imagesprojeto/cepagora.png);
+}
+
+aside .url {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: url;
+  width: auto;
+  background-size: contain;
+  background-image: url(../images/imagesprojeto/url-shorting.png);
+}
+
+aside .hotel {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: hotel;
+  width: auto;
+  background-size: contain;
+  background-image: url(../images/imagesprojeto/hotel.png);
+}
+
+aside .informatica, aside .corretora, aside .room, aside .depoimentos, aside .contabilidade, aside .bootcamp, aside .cep_agora, aside .url, aside .hotel {
   width: auto;
   height: 80vh;
   background-size: contain;
