@@ -62,7 +62,8 @@
   body #menu-mobile img {
     background-size: contain;
     height: 20vh;
-    width: 100%;
+    width: auto;
+    padding: 0px 10px;
     cursor: pointer;
   }
   body #projetos {
