@@ -130,6 +130,7 @@ aside{
     background-color: #95B8D1;
     display: grid;
     grid-template-areas:
+    "frontEnd frontEnd"
     "contabilidade contabilidade"
     "informatica informatica"
     "corretora corretora"
@@ -145,13 +146,16 @@ aside{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 
+    .front{
+        grid-area: frontEnd;
+        background-image: url(../images/imagesprojeto/praticandoFront-end.png);
+    }
+
    
     .informatica{
         grid-area: informatica;
-        width: $width;
-        height: $height;
         background-image: url(../images/imagesprojeto/informatica.png);
-        background-size: $background;
+        
         
         
     }
@@ -175,47 +179,36 @@ aside{
 
     .bootcamp{
         grid-area: bootcamp;
-        width: $width;
-        background-size: $background;
         background-image: url(../images/imagesprojeto/bootcamp.png);
-        background-repeat: $repete;
+       
     }
 
     .contabilidade{
         grid-area: contabilidade;
-        width: $width;
-        background-size: $background;
         background-image: url(../images/imagesprojeto/contabilidade.png);
     }
 
     .cep_agora{
         grid-area: cep_agora;
-        width: $width;
-        background-size: $background;
         background-image: url(../images/imagesprojeto/cepagora.png);
     }
     
     .url{
         grid-area: url;
-        width: $width;
-        background-size: $background;
         background-image: url(../images/imagesprojeto/url-shorting.png);
     }
 
     .hotel{
-        grid-area: hotel;
-        width: $width;
-        background-size: $background;
+        grid-area: hotel; 
         background-image: url(../images/imagesprojeto/hotel.png)
     }
 
-    .informatica, .corretora, .room, .depoimentos,.contabilidade,.bootcamp,.cep_agora,.url,.hotel{
+    .front,.informatica, .corretora, .room, .depoimentos,.contabilidade,.bootcamp,.cep_agora,.url,.hotel{
         width: $width;
         height: $height;
         background-size: $background;
         background-repeat: $repete;
         background-position: center;
-        
     }
     
     
